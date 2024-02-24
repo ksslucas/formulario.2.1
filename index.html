@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div>
+        <h1 id="titulo">
+             Cadastro de Devs
+        </h1>
+        <p id="subtitulo">
+                Complete suas informações
+        </p>
+    </div>
+    <main>
+        <section>
+            <div class="campo">
+               
+            </div >
+            <div id="formulario">
+            <form action="index.php" method="post">
+                
+         <fieldset id="e">
+             <label for="inome">Nome: </label>       <input type="text" name="nome" id="inome" required maxlength="20"> 
+
+             Sobrenome:     <input type="text" name="sbr" id="sobre"><label for="sobre">  </label> <br>
+
+            E-mail:  <label for="iemail" > </label> <input type="email" name="email" id="iemail" required>  
+
+            Senha:       <label for="isenha">   </label> <input type="password" name="senha" id="isenha" required> 
+         </fieldset>
+            </div>
+           
+               <fieldset id="sec">
+                   <form action="index2.php" method="post" >
+
+                  
+
+                    <div class="campo">
+                        <label>
+                            <p id="sen">
+                                Senioridade
+                            </p>
+                        </label>
+                        <select  class="senioridade" required>
+                            <option value="jr" > Júnior</option>
+                            <option value="pl">Pleno</option>
+                            <option value="sn">Sênior</option>
+                        </select>
+                    </div>
+                    <div id="vc">Qual aplicação Você desenvolve?</div>
+                    <label >
+                      <input type="radio" value="dev"  name="aplicacao" id="front" class="forma"> Front-end
+                    </label>
+                     <label >
+                       <input type="radio"  value="dev"  name="aplicacao" id="back" class="forma"> 
+                       Back-end
+                     </label>
+                      <label >
+                       <input type="radio"  value="dev" name="aplicacao" id="full" class="forma"> Fullstack
+                    </label>
+                  </div>
+                  <div class="campo">
+                    <label for="experiencia"><strong id="nn"> Conte um pouco mais sobre sua experiência :</strong>
+                        <textarea name="experiencia" id="experiencia"  rows="8" style="width: 26em;"></textarea>
+
+                    </label>
+                 
+                  </div>
+
+               </fieldset>
+               <button id="botao" type="submit" onsubmit="">Concluído</button>       
+               
+            </div>
+        </form>
+        </section>
+    </main>
+</body>
+</html>
